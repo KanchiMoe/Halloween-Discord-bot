@@ -30,7 +30,7 @@ async def on_ready():
         await client.close()
 
 def generate_random_nickname():
-    emojis = ["👻", "💀", "☠️", "🎃", "🕸️", "⚰️", "🪦"]
+    emoji = ['👻', '💀', '☠', '🎃', '🕸', '😈', '👹', '👺', '🧛', '🧟']    
     random.shuffle(emojis)
     return ''.join(emojis)
 
