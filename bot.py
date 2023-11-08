@@ -1,8 +1,11 @@
 import discord
+from dotenv import load_dotenv
+import os
 import random
 
-TOKEN = 'xxx'
-SERVER_ID = 123
+load_dotenv()
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')
+SERVER_ID = os.getenv('SERVER_ID')
 
 intents = discord.Intents.default()
 intents.members = True
